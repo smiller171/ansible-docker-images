@@ -2,6 +2,6 @@ FROM fedora
 
 MAINTAINER scott.miller171@gmail.com
 
-RUN yum update
-RUN yum install python python-pip python-dev -y
-RUN pip install ansible -y
+RUN dnf upgrade -y
+RUN dnf install -y python python-pip python-dev
+RUN pip install ansible
