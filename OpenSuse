@@ -1,6 +1,6 @@
 FROM opensuse
 
 MAINTAINER scott.miller171@gmail.com
-RUN zypper up -y
-RUN zypper install python python-dev python-pip -y
+RUN zypper up --non-interactive --auto-agree-with-licenses
+RUN zypper install --non-interactive --auto-agree-with-licenses python python-dev python-pip
 RUN pip install ansible
