@@ -3,5 +3,5 @@ FROM fedora
 MAINTAINER scott.miller171@gmail.com
 
 RUN dnf upgrade -y
-RUN dnf install -y python python-pip python-dev
+RUN dnf install -y python python-pip python-devel
 RUN pip install ansible
