@@ -1,0 +1,5 @@
+FROM opensuse
+
+MAINTAINER scott.miller171@gmail.com
+RUN zypper up
+RUN zypper install python python-dev python-pip

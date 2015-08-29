@@ -1,0 +1,8 @@
+FROM debian
+
+MAINTAINER scott.miller171@gmail.com
+
+RUN sudo apt-get update
+RUN sudo apt-get dist-upgrade -yq
+RUN sudo apt-get install python python-dev python-pip -yq
+RUN sudo pip install ansible
