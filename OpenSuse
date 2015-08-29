@@ -3,3 +3,4 @@ FROM opensuse
 MAINTAINER scott.miller171@gmail.com
 RUN zypper up -y
 RUN zypper install python python-dev python-pip -y
+RUN pip install ansible
