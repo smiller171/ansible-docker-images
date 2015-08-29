@@ -2,6 +2,6 @@ FROM centos
 
 MAINTAINER scott.miller171@gmail.com
 
-RUN sudo yum update
-RUN sudo yum install python python-pip python-dev -y
-RUN sudo pip install ansible -y
+RUN yum update
+RUN yum install python python-pip python-dev -y
+RUN pip install ansible -y
