@@ -7,7 +7,13 @@ branches:
     - master
 
 script:
-- docker build -f Ubuntu .
-- docker build -f Debian .
-- docker build -f Centos .
-- docker build -f OpenSuse .
+- docker build -t scottmiller171/ubuntu-ansible:latest -f Ubuntu .
+- docker build -t scottmiller171/debian-ansible:latest -f Debian .
+- docker build -t scottmiller171/centos-ansible:latest -f Centos .
+- docker build -t scottmiller171/opensuse-ansible:latest -f OpenSuse .
+
+after_script:
+- docker push scottmiller171/ubuntu-ansible:latest
+- docker push scottmiller171/debian-ansible:latest
+- docker push scottmiller171/centos-ansible:latest
+- docker push scottmiller171/opensuse-ansible:latest
