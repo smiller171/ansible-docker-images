@@ -13,6 +13,7 @@ script:
 - docker build -t scottmiller171/opensuse-ansible:latest -f OpenSuse .
 
 after_script:
+- docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
 - docker push scottmiller171/ubuntu-ansible:latest
 - docker push scottmiller171/debian-ansible:latest
 - docker push scottmiller171/centos-ansible:latest
