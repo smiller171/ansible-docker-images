@@ -10,5 +10,4 @@ script:
 - docker build -f Ubuntu .
 - docker build -f Debian .
 - docker build -f Centos .
-- docker build -f Fedora .
 - docker build -f OpenSuse .
