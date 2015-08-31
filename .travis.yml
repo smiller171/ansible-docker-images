@@ -12,8 +12,6 @@ script:
 - docker build -t scottmiller171/centos-ansible:latest -f Centos .
 - docker build -t scottmiller171/opensuse-ansible:latest -f OpenSuse .
 
-before_deploy:
-- docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USER" -p="$DOCKER_PASS"
 deploy:
   skip_cleanup: true
   provider: script
