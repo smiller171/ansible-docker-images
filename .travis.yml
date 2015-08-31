@@ -12,9 +12,10 @@ script:
 - docker build -t scottmiller171/centos-ansible:latest -f Centos .
 - docker build -t scottmiller171/opensuse-ansible:latest -f OpenSuse .
 
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: deploy.sh
-  on:
-    branch: master
+after_script:
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master"
+- docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USER" -p="$DOCKER_PASS"
+- docker push scottmiller171/ubuntu-ansible:latest
+- docker push scottmiller171/debian-ansible:latest
+- docker push scottmiller171/centos-ansible:latest
+- docker push scottmiller171/opensuse-ansible:latest
