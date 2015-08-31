@@ -13,7 +13,7 @@ env:
   - DISTRO=opensuse
 
 script:
-- docker build -t scottmiller171/$"DISTRO"-ansible:latest -f $"DISTRO" .
+- docker build -t scottmiller171/"$DISTRO"-ansible:latest -f "$DISTRO" .
 
 after_script:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master"
