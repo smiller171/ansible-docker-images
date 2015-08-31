@@ -6,16 +6,16 @@ branches:
   only:
     - master
 
+env:
+  - DISTRO=ubuntu
+  - DISTRO=debian
+  - DISTRO=centos
+  - DISTRO=opensuse
+
 script:
-- docker build -t scottmiller171/ubuntu-ansible:latest -f Ubuntu .
-- docker build -t scottmiller171/debian-ansible:latest -f Debian .
-- docker build -t scottmiller171/centos-ansible:latest -f Centos .
-- docker build -t scottmiller171/opensuse-ansible:latest -f OpenSuse .
+- docker build -t scottmiller171/"$DISTRO"-ansible:latest -f "$DISTRO" .
 
 after_script:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master"
 - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USER" -p="$DOCKER_PASS"
-- docker push scottmiller171/ubuntu-ansible:latest
-- docker push scottmiller171/debian-ansible:latest
-- docker push scottmiller171/centos-ansible:latest
-- docker push scottmiller171/opensuse-ansible:latest
+- docker push scottmiller171/$DISTRO-ansible:latest
