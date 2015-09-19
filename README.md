@@ -9,6 +9,14 @@ https://hub.docker.com/r/scottmiller171/ansible-docker-images/
 
 ##Tags
 ubuntu (latest LTS release)  
+ubuntu-12.04
+ubuntu-14.04
+ubuntu-15.04
+ubuntu-15.10
+ubuntu-precise
+ubuntu-trusty
+ubuntu-vivid
+ubuntu-wily
 debian (latest Debian build)  
 centos (CentOS6)  
 OpenSuse (latest release)  
