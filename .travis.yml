@@ -21,9 +21,4 @@ env:
   - DISTRO=opensuse
 
 script:
-- docker build -t scottmiller171/"$DISTRO"-ansible:latest -f "$DISTRO" .
-
-after_script:
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master"
-- docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USER" -p="$DOCKER_PASS"
-- docker push scottmiller171/$DISTRO-ansible:latest
+- docker build -t scottmiller171/"$DISTRO"-ansible:latest ./"$DISTRO"
