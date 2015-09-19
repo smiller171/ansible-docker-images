@@ -5,10 +5,10 @@
 
 Creates Docker images with Ansible installed
 
-https://hub.docker.com/r/scottmiller171/ubuntu-ansible/  
-https://hub.docker.com/r/scottmiller171/debian-ansible/  
-https://hub.docker.com/r/scottmiller171/centos-ansible/  
-https://hub.docker.com/r/scottmiller171/opensuse-ansible/  
+https://hub.docker.com/r/scottmiller171/ansible-ubuntu/  
+https://hub.docker.com/r/scottmiller171/ansible-debian/  
+https://hub.docker.com/r/scottmiller171/ansible-centos/  
+https://hub.docker.com/r/scottmiller171/ansible-opensuse/  
 
 ## License
 MIT

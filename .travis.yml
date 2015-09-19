@@ -21,4 +21,4 @@ env:
   - DISTRO=opensuse
 
 script:
-- docker build -t scottmiller171/"$DISTRO"-ansible:latest -f "$DISTRO" .
+- docker build -t scottmiller171/"$DISTRO"-ansible:latest ./"$DISTRO"
