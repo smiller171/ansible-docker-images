@@ -26,6 +26,9 @@ debian-6
 debian-7  
 debian-8  
 centos (CentOS7)  
+centos-5  
+centos-6  
+centos-7  
 OpenSuse (latest release)  
 
 ## License
