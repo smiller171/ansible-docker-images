@@ -7,5 +7,11 @@ Creates Docker images with Ansible installed
 
 https://hub.docker.com/r/scottmiller171/ansible-docker-images/ 
 
+##Tags
+ubuntu (latest LTS release)  
+debian (latest Debian build)  
+centos (CentOS6)  
+OpenSuse (latest release)  
+
 ## License
 MIT
