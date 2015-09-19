@@ -5,19 +5,26 @@
 
 Creates Docker images with Ansible installed
 
-https://hub.docker.com/r/scottmiller171/ansible-docker-images/ 
+https://hub.docker.com/r/scottmiller171/ansible-docker-images/
 
 ##Tags
 ubuntu (latest LTS release)  
-ubuntu-12.04
-ubuntu-14.04
-ubuntu-15.04
-ubuntu-15.10
-ubuntu-precise
-ubuntu-trusty
-ubuntu-vivid
-ubuntu-wily
+ubuntu-12.04  
+ubuntu-14.04  
+ubuntu-15.04  
+ubuntu-15.10  
+ubuntu-precise  
+ubuntu-trusty  
+ubuntu-vivid  
+ubuntu-wily  
 debian (latest Debian build)  
+debian-squeeze  
+debian-wheezy  
+debian-jessie  
+debian-stable  
+debian-6  
+debian-7  
+debian-8  
 centos (CentOS6)  
 OpenSuse (latest release)  
 
