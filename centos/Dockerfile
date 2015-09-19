@@ -7,3 +7,5 @@ RUN rpm -ivh epel-release-6-8.noarch.rpm
 RUN yum update -y
 RUN yum install -y python python-pip python-devel gcc libyaml-devel
 RUN pip install ansible
+RUN yum clean all
+RUN rm -Rf ~/.pip/cache/
