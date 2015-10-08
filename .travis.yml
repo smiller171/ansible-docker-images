@@ -19,6 +19,7 @@ env:
   - DISTRO=debian
   - DISTRO=centos
   - DISTRO=opensuse
+  - DISTRO=alpine
 
 script:
 - docker build -t scottmiller171/"$DISTRO"-ansible:latest ./"$DISTRO"
