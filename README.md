@@ -8,6 +8,7 @@ Creates Docker images with Ansible installed
 https://hub.docker.com/r/scottmiller171/ansible-docker-images/
 
 ##Tags
+alpine (smallest package)
 ubuntu (latest LTS release)  
 ubuntu-12.04  
 ubuntu-14.04  
