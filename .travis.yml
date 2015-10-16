@@ -36,3 +36,4 @@ env:
 
 script:
 - docker build -t scottmiller171/"$DISTRO"-ansible:latest ./"$DISTRO"
+- docker run -it scottmiller171/"$DISTRO"-ansible:latest ansible -i "localhost," -c local localhost -m ping
