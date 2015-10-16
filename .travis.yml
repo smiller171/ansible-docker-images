@@ -16,9 +16,21 @@ notifications:
     on_start: never     # options: [always|never|change] default: always
 
 env:
+  - DISTRO=alpine
   - DISTRO=ubuntu
+  - DISTRO=ubuntu/12.04
+  - DISTRO=ubuntu/14.04
+  - DISTRO=ubuntu/15.04
+  - DISTRO=ubuntu/15.10
   - DISTRO=debian
+  - DISTRO=debian/jessie
+  - DISTRO=debian/squeeze
+  - DISTRO=debian/wheezy
+  - DISTRO=debian/stable
   - DISTRO=centos
+  - DISTRO=centos/5
+  - DISTRO=centos/6
+  - DISTRO=centos/7
   - DISTRO=opensuse
   - DISTRO=alpine
 
