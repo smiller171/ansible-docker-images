@@ -33,6 +33,7 @@ env:
   - DISTRO=centos/7
   - DISTRO=opensuse
   - DISTRO=alpine
+  - DISTRO=codenvy
 
 script:
 - docker build -t scottmiller171/"$DISTRO"-ansible:latest ./"$DISTRO"
