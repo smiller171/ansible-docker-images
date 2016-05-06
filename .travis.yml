@@ -24,7 +24,6 @@ env:
   - DISTRO=ubuntu/15.10
   - DISTRO=debian
   - DISTRO=debian/jessie
-  - DISTRO=debian/squeeze
   - DISTRO=debian/wheezy
   - DISTRO=debian/stable
   - DISTRO=centos
