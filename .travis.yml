@@ -18,7 +18,6 @@ notifications:
 env:
   - DISTRO=alpine
   - DISTRO=ubuntu
-  - DISTRO=ubuntu/12.04
   - DISTRO=ubuntu/14.04
   - DISTRO=ubuntu/15.04
   - DISTRO=ubuntu/15.10
