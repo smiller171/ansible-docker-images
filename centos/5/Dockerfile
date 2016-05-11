@@ -10,5 +10,5 @@ RUN yum update -y \
     && yum install -y gcc libyaml-devel wget python-simplejson openssl-devel \
     && yum clean all
 RUN wget --no-check-certificate https://raw.githubusercontent.com/weldpua2008/python-2.7.x-on-Centos-5.x/master/install_python27.sh -O - | sh
-RUN pip2.7 install pip ansible --upgrade && rm -Rf ~/.pip/cache/
+RUN pip2.7 install pip setuptools ansible --upgrade && rm -Rf ~/.pip/cache/
 ENV PATH $PATH:/opt/python2.7.10/bin
