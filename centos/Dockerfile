@@ -6,8 +6,8 @@ RUN yum -y install wget \
     && rpm -ivh epel-release-7-6.noarch.rpm \
     && rm epel-release-7-6.noarch.rpm \
     && yum update -y \
-    && yum groupinstall 'Development Tools' -y
-    && yum install -y python python-pip python-devel gcc libyaml-devel libffi-devel openssl-devel\
+    && yum groupinstall 'Development Tools' -y \
+    && yum install -y python python-pip python-devel gcc libyaml-devel libffi-devel openssl-devel \
     && yum clean all
 RUN pip install pip ansible --upgrade \
     && rm -Rf ~/.pip/cache/
